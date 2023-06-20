@@ -21,8 +21,9 @@ var fuente = ()=>{
     let btn = document.getElementById('btnFuente');
     if(btn.value == '0'){
         let elements = document.getElementsByClassName('small-letras');
-        for (let i = 0; i < elements.length; i++) {
-          const element = elements[i];
+        const largo = elements.length;
+        for (let i = 0; i < largo; i++) {
+          const element = elements[0];
           element.classList.add('medium-letras')
           element.classList.remove('small-letras')
            
@@ -33,8 +34,9 @@ var fuente = ()=>{
     }
     else if (btn.value == '1'){
         let elements = document.getElementsByClassName('medium-letras');
-        for (let i = 0; i < elements.length; i++) {
-          const element = elements[i];
+        const largo = elements.length;
+        for (let i = 0; i < largo; i++) {
+          const element = elements[0];
           element.classList.add('large-letras')
           element.classList.remove('medium-letras')
            
@@ -43,8 +45,9 @@ var fuente = ()=>{
     }
     else if (btn.value == '2'){
         let elements = document.getElementsByClassName('large-letras');
-        for (let i = 0; i < elements.length; i++) {
-          const element = elements[i];
+        const largo = elements.length
+        for (let i = 0; i < largo; i++) {
+          const element = elements[0];
           element.classList.add('small-letras')
           element.classList.remove('large-letras')
            
